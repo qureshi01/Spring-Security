@@ -18,12 +18,12 @@ public class ProductController {
 	@Autowired
 	private ProductRepo repo;
 	
-	@PostMapping("/save")						//ADMIN
+	@PostMapping("/save")						
 	public Product create(@RequestBody Product product) {
 		return repo.save(product);
 	}
 	
-	@GetMapping("/get")						//ADMIN & USER
+	@GetMapping("/get")						
 	public List<Product> getAllProducts(){
 		return repo.findAll();
 	}

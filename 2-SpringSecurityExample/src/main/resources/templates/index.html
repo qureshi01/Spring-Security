@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Product Management System</title>
+	</head>
+	<body>
+		<a href="/uploadLaptop" style="margin-right: 100px;">Upload Laptop</a>
+		<a href="/viewLaptops" style="margin-right: 100px;">View Laptops</a>
+		<form name="logoutForm" th:action="@{/logout}" method="post">
+			<input type="submit" value="Logout">
+		</form>
+	</body>
+</html>

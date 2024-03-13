@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Product Management System</title>
+	</head>
+	<body>
+		<form name="uploadLaptopInfo" th:action="@{/saveWeb}" method="post">
+			<input type="text" name="name" placeholder="enter name"> <br><br>
+			<input type="number" name="cost" placeholder="enter cost"> <br><br>
+			<input type="text" name="image" placeholder="enter image"> <br><br>
+			<input type="submit" value="Upload">
+		</form>	
+	</body>
+</html>

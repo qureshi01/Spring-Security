@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Product Management System</title>
+	</head>
+	<body>
+		<table border="1"
+			   align="center">
+			<tr>
+				<th>id</th>
+				<th>name</th>
+				<th>cost</th>
+				<th>image</th>
+			</tr>
+			
+			<tr th:each="product:${products}">
+				<td th:text="${product.id}"></td>
+				<td th:text="${product.name}"></td>
+				<td th:text="${product.cost}"></td>
+				<td>
+    				<img th:src="${product.image}" alt="Product Image" width="50px"/>
+				</td>
+			</tr>	   
+		</table>
+	</body>
+</html>

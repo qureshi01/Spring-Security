@@ -18,9 +18,12 @@ public class SecurityConfiguration {
 	
 	@Bean
 	SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
-		http.httpBasic(Customizer.withDefaults());
-		http.authorizeHttpRequests(authorize->authorize.requestMatchers(HttpMethod.POST,"/save").hasAnyRole("ADMIN","ADMIN1")
-													   .requestMatchers(HttpMethod.GET,"/get").hasAnyRole("ADMIN","USER"));
+//		http.httpBasic(Customizer.withDefaults());
+		http.formLogin(Customizer.withDefaults());
+		http.authorizeHttpRequests(authorize->authorize.requestMatchers(HttpMethod.POST,"/save").hasRole("ADMIN")
+													   .requestMatchers(HttpMethod.GET,"/get","/","/viewLaptops","/products").hasAnyRole("ADMIN","USER")
+													   .requestMatchers(HttpMethod.GET,"/uploadLaptop","/uploadLaptopForm","/success").hasRole("ADMIN")
+													   .requestMatchers(HttpMethod.POST,"/saveWeb").hasRole("ADMIN"));
 		http.csrf(csrf->csrf.disable());
 		return http.build();
 	}
