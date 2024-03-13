@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Employee Management System</title>
+	</head>
+	<body>
+		<form name="uploadEmployeeInfo" th:action="@{/saveWeb}" method="post">
+			<input type="text" name="name" placeholder="enter name"> <br><br>
+			<input type="text" name="job" placeholder="enter job"> <br><br>
+			<input type="number" name="salary" placeholder="enter salary"> <br><br>
+			<input type="submit" value="Upload">
+		</form>	
+	</body>
+</html>

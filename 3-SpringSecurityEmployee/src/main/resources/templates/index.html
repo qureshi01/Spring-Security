@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Employee Management System</title>
+	</head>
+	<body>
+		<a href="/uploadEmployee" style="margin-right: 100px;">Upload Employee</a>
+		<a href="/viewEmployees" style="margin-right: 100px;">View Employee</a>
+		<form name="logoutForm" th:action="@{/logout}" method="post">
+			<input type="submit" value="Logout">
+		</form>
+	</body>
+</html>
