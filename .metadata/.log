@@ -214,3 +214,121 @@ org.eclipse.jface.text.BadLocationException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-13 22:18:59.495
 !MESSAGE Classpath changed for project: 3-SpringSecurityEmployee
+!SESSION 2024-03-14 21:40:57.679 -----------------------------------------------
+eclipse.buildId=4.21.0.202312011804
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -keyring /Users/qureshi/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -keyring /Users/qureshi/.eclipse_keyring
+
+!ENTRY org.eclipse.emf.ecore 2 0 2024-03-14 21:40:59.253
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2024-03-14 21:41:06.460
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-03-14 21:41:06.460
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-14 21:41:09.890
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_17.0.9.v20231028-0858/jre/bin/java
+-cp
+/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins/org.springframework.tooling.boot.ls_1.51.0.202312011752/servers/spring-boot-language-server/BOOT-INF/classes:/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins/org.springframework.tooling.boot.ls_1.51.0.202312011752/servers/spring-boot-language-server/BOOT-INF/lib/*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins/org.springframework.tooling.boot.ls_1.51.0.202312011752/servers/spring-boot-language-server/BOOT-INF/classes/application.properties
+-XX:ErrorFile=/Users/qureshi/Desktop/Excelr Class/SPRINGBOOT SECURITY/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1710432669886
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-14 21:41:09.891
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-03-14 21:41:09.911
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 25006
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-14 21:41:12.059
+!MESSAGE Boot project ADDED: 1-SpringSecurityExample
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-14 21:41:12.059
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-14 21:41:12.061
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-14 21:41:12.061
+!MESSAGE Boot project ADDED: 2-SpringSecurityExample
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-14 21:41:12.068
+!MESSAGE Boot project ADDED: 3-SpringSecurityEmployee
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-14 21:42:15.553
+!MESSAGE Classpath changed for project: couponService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-14 21:42:16.088
+!MESSAGE Classpath changed for project: couponService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-14 21:42:20.437
+!MESSAGE Classpath changed for project: couponService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-14 21:42:20.442
+!MESSAGE Boot project ADDED: couponService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-14 21:42:20.685
+!MESSAGE Classpath changed for project: couponService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-14 21:42:33.599
+!MESSAGE Classpath changed for project: productService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-14 21:42:33.873
+!MESSAGE Classpath changed for project: productService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-14 21:42:35.392
+!MESSAGE Classpath changed for project: productService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-14 21:42:35.393
+!MESSAGE Boot project ADDED: productService
+
+!ENTRY org.eclipse.jface 2 0 2024-03-14 21:43:17.549
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-03-14 21:43:17.550
+!MESSAGE A conflict occurred for COMMAND+SHIFT+C:
+Binding(COMMAND+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(COMMAND+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
