@@ -444,3 +444,15 @@ Binding(COMMAND+SHIFT+C,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-19 21:23:02.930
+!MESSAGE Classpath changed for project: JDBCAuthentication-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-19 21:23:02.933
+!MESSAGE Boot project ADDED: JDBCAuthentication-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-19 21:23:03.332
+!MESSAGE Classpath changed for project: JDBCAuthentication-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-03-19 21:23:34.098
+!MESSAGE Classpath changed for project: JDBCAuthentication-1
