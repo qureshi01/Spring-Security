@@ -40,7 +40,7 @@ public class SecurityConfig {
 		
 		http.authorizeHttpRequests(authorize->authorize.requestMatchers(HttpMethod.GET,"/").permitAll()
 														.requestMatchers(HttpMethod.GET,"/about").hasRole("ADMIN")
-														.requestMatchers(HttpMethod.GET,"/profile").hasRole("ADMIN"));
+														.requestMatchers(HttpMethod.GET,"/profile").hasRole("USER"));
 		
 		
 		return http.build();

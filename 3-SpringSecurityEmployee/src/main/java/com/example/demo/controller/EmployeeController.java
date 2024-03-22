@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.model.Employee;
 import com.example.demo.repo.EmployeeRepo;
-import com.excelr.model.Product;
+
 
 @RestController
 @CrossOrigin("*")

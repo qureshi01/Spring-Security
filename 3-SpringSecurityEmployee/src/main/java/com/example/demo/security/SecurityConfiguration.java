@@ -11,21 +11,21 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 public class SecurityConfiguration {
 	
-	@Bean
-	BCryptPasswordEncoder passwordEncoder() {
-		return new BCryptPasswordEncoder();
-	}
-	
-	@Bean
-	SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
-		http.httpBasic(Customizer.withDefaults());
-		http.formLogin(Customizer.withDefaults());
-		http.authorizeHttpRequests(authorize->authorize.requestMatchers(HttpMethod.POST,"/save").hasRole("ADMIN")
-													   .requestMatchers(HttpMethod.GET,"/get","/","/viewEmployees","/employees").hasAnyRole("ADMIN","USER")
-													   .requestMatchers(HttpMethod.GET,"/uploadEmployee","/uploadEmployeeForm","/success").hasRole("ADMIN")
-													   .requestMatchers(HttpMethod.POST,"/saveWeb").hasRole("ADMIN"));
-		http.csrf(csrf->csrf.disable());
-		return http.build();
-	}
+//	@Bean
+//	BCryptPasswordEncoder passwordEncoder() {
+//		return new BCryptPasswordEncoder();
+//	}
+//	
+//	@Bean
+//	SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
+//		http.httpBasic(Customizer.withDefaults());
+//		http.formLogin(Customizer.withDefaults());
+//		http.authorizeHttpRequests(authorize->authorize.requestMatchers(HttpMethod.POST,"/save").hasRole("ADMIN")
+//													   .requestMatchers(HttpMethod.GET,"/get","/","/viewEmployees","/employees").hasAnyRole("ADMIN","USER")
+//													   .requestMatchers(HttpMethod.GET,"/uploadEmployee","/uploadEmployeeForm","/success").hasRole("ADMIN")
+//													   .requestMatchers(HttpMethod.POST,"/saveWeb").hasRole("ADMIN"));
+//		http.csrf(csrf->csrf.disable());
+//		return http.build();
+//	}
 
 }
